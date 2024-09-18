@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <motion.main
       ref={ref}
-      className="h-[500vh] bg-neutral-950 text-neutral-100 w-screen overflow-clip"
+      className="h-[500vh] bg-neutral-950 text-neutral-100 overflow-x-clip"
       style={
         {
           "--scale": scale,
