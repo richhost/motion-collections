@@ -15,7 +15,7 @@ export default function Page() {
     [0, 0.2, 0.6, 0.7],
     [0.1, 1, 0.4, 0.1]
   );
-  const contentX = useTransform(scrollYProgress, [0, 0.7], ["100%", "-400%"]);
+  const contentX = useTransform(scrollYProgress, [0, 0.7], ["102%", "-400%"]);
   const centerOpacity = useTransform(scrollYProgress, [0.5, 0.7], [0, 1]);
 
   return (

@@ -15,19 +15,19 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@remix-run/cloudflare": "^2.12.0",
-    "@remix-run/cloudflare-pages": "^2.12.0",
-    "@remix-run/react": "^2.12.0",
-    "framer-motion": "^11.5.4",
+    "@remix-run/cloudflare": "^2.12.1",
+    "@remix-run/cloudflare-pages": "^2.12.1",
+    "@remix-run/react": "^2.12.1",
+    "framer-motion": "^11.5.5",
     "isbot": "^4.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240909.0",
+    "@cloudflare/workers-types": "^4.20240919.0",
     "@icons-pack/react-simple-icons": "^10.0.0",
-    "@remix-run/dev": "^2.12.0",
-    "@types/react": "^18.3.7",
+    "@remix-run/dev": "^2.12.1",
+    "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
