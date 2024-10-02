@@ -1,0 +1,34 @@
+---
+import { SiGithub } from "@icons-pack/react-simple-icons";
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Motion Collections">
+  <div class="min-h-dvh flex flex-col items-center justify-center">
+    <h1 class="font-semibold">
+      Motion Collections
+    </h1>
+    <ul class="border rounded-xl max-w-xs w-full p-4 m-4 flex flex-col gap-3">
+      <a>
+        <a href="/vision-pro" class="underline underline-offset-2">
+          Vision Pro
+        </a>
+        <a href="/text-stroke" class="underline underline-offset-2">
+          Text Stroke
+        </a>
+      </a>
+    </ul>
+
+    <p>
+      <a
+        href="https://github.com/richhost/motion-collections"
+        class="text-center inline-block scale-100 hover:scale-110 transition-transform"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <SiGithub />
+      </a>
+    </p>
+  </div>
+</Layout>

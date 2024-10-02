@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Mouse, MoveDown } from "lucide-react";
 import { type CSSProperties, useRef } from "react";
 
-export default function Page() {
+export const TextStroke = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -60,4 +60,4 @@ export default function Page() {
       </div>
     </motion.main>
   );
-}
+};

@@ -1,46 +1,31 @@
 {
   "name": "motion-collections",
-  "private": true,
-  "sideEffects": false,
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "remix vite:build",
-    "deploy": "pnpm run build && wrangler pages deploy",
-    "dev": "remix vite:dev",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "wrangler pages dev ./build/client",
-    "typecheck": "tsc",
-    "typegen": "wrangler types",
-    "preview": "pnpm run build && wrangler pages dev",
-    "cf-typegen": "wrangler types"
-  },
-  "dependencies": {
-    "@remix-run/cloudflare": "^2.12.1",
-    "@remix-run/cloudflare-pages": "^2.12.1",
-    "@remix-run/react": "^2.12.1",
-    "framer-motion": "^11.7.0",
-    "isbot": "^4.4.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240924.0",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/svelte": "6.0.0-beta.0",
+    "@astrojs/tailwind": "^5.1.1",
     "@icons-pack/react-simple-icons": "^10.0.0",
-    "@remix-run/dev": "^2.12.1",
-    "@types/react": "^18.3.9",
+    "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "autoprefixer": "^10.4.20",
-    "lucide-react": "^0.441.0",
-    "postcss": "^8.4.47",
+    "astro": "5.0.0-beta.3",
+    "framer-motion": "^11.9.0",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.447.0",
+    "lucide-svelte": "^0.447.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "svelte": "5.0.0-next.260",
     "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.8",
-    "vite-tsconfig-paths": "^4.3.2",
-    "wrangler": "3.57.1"
-  },
-  "engines": {
-    "node": ">=20.0.0"
+    "typescript": "^5.6.2"
   }
 }
