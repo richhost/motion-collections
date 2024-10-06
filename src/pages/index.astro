@@ -2,6 +2,25 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
 
 import Layout from '../layouts/Layout.astro';
+
+const list = [
+  {
+    name: 'Vision Pro',
+    path: '/vision-pro'
+  },
+  {
+    name: 'Text Stroke',
+    path: '/text-stroke'
+  },
+  {
+    name: 'Hover Gallery',
+    path: '/hover-gallery'
+  },
+  {
+    name: "Zoom Parallax",
+    path: "/zoom-parallax"
+  }
+]
 ---
 
 <Layout title="Motion Collections">
@@ -10,21 +29,11 @@ import Layout from '../layouts/Layout.astro';
       Motion Collections
     </h1>
     <ul class="border rounded-xl max-w-xs w-full p-4 m-4 flex flex-col gap-3">
-      <li>
-        <a href="/vision-pro" class="underline underline-offset-2">
-          Vision Pro
-        </a>
-      </li>
-      <li>
-        <a href="/text-stroke" class="underline underline-offset-2">
-          Text Stroke
-        </a>
-      </li>
-      <li>
-        <a href="/hover-gallery" class="underline underline-offset-2">
-          Hover Gallery
-        </a>
-      </li>
+      {list.map(item => (
+        <li>
+          <a href={item.path} class="underline underline-offset-2">{item.name}</a>
+        </li>
+      ))}
     </ul>
 
     <p>
