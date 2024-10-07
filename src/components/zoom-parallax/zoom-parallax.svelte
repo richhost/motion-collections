@@ -32,7 +32,6 @@
   <div class="h-[80vh]"></div>
 </SvelteLenis>
 
-
 <style>
   @keyframes parallax {
     to {
@@ -68,7 +67,6 @@
     & .img-container {
       right: -28vw;
     }
-    
   }
 
   .wrapper:nth-child(5) {

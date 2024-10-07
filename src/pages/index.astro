@@ -1,50 +1,52 @@
 ---
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import { SiGithub } from '@icons-pack/react-simple-icons';
 
 import Layout from '../layouts/Layout.astro';
 
 const list = [
-  {
-    name: 'Vision Pro',
-    path: '/vision-pro'
-  },
-  {
-    name: 'Text Stroke',
-    path: '/text-stroke'
-  },
-  {
-    name: 'Hover Gallery',
-    path: '/hover-gallery'
-  },
-  {
-    name: "Zoom Parallax",
-    path: "/zoom-parallax"
-  }
-]
+	{
+		name: 'Vision Pro',
+		path: '/vision-pro'
+	},
+	{
+		name: 'Text Stroke',
+		path: '/text-stroke'
+	},
+	{
+		name: 'Hover Gallery',
+		path: '/hover-gallery'
+	},
+	{
+		name: 'Zoom Parallax',
+		path: '/zoom-parallax'
+	}
+];
 ---
 
 <Layout title="Motion Collections">
-  <div class="min-h-dvh flex flex-col items-center justify-center">
-    <h1 class="font-semibold">
-      Motion Collections
-    </h1>
-    <ul class="border rounded-xl max-w-xs w-full p-4 m-4 flex flex-col gap-3">
-      {list.map(item => (
-        <li>
-          <a href={item.path} class="underline underline-offset-2">{item.name}</a>
-        </li>
-      ))}
-    </ul>
+	<div class="min-h-dvh flex flex-col items-center justify-center">
+		<h1 class="font-semibold">Motion Collections</h1>
+		<ul class="border rounded-xl max-w-xs w-full p-4 m-4 flex flex-col gap-3">
+			{
+				list.map((item) => (
+					<li>
+						<a href={item.path} class="underline underline-offset-2">
+							{item.name}
+						</a>
+					</li>
+				))
+			}
+		</ul>
 
-    <p>
-      <a
-        href="https://github.com/richhost/motion-collections"
-        class="text-center inline-block scale-100 hover:scale-110 transition-transform"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <SiGithub />
-      </a>
-    </p>
-  </div>
+		<p>
+			<a
+				href="https://github.com/richhost/motion-collections"
+				class="text-center inline-block scale-100 hover:scale-110 transition-transform"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<SiGithub />
+			</a>
+		</p>
+	</div>
 </Layout>
